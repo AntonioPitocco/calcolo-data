@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcolo Data</h1>
+        <form id="dateForm">
+            <label for="dateInput">Inserisci una data (gg/mm/aaaa):</label>
+            <input type="text" id="dateInput" placeholder="gg/mm/aaaa" required>
+            
+            <label for="daysInput">Inserisci un numero di giorni (+ o -):</label>
+            <input type="number" id="daysInput" required>
+            
+            <button type="button" onclick="calculateDate()">Calcola</button>
+        </form>
+        
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
